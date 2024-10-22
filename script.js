@@ -6,4 +6,11 @@ function getRandomMessage(arr) {
     return arr[Math.floor(Math.random()*arr.length)];
 }
 
+function generateAdventure() {
+    const character = getRandomMessage(characters);
+    const location = getRandomMessage(locations);
+    const challange = getRandomMessage(challanges);
+    console.log(`The ${character} is in the ${location} and must ${challange}.`);
+}
 
+generateAdventure();
